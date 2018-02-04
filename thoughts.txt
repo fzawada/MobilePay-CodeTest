@@ -1,0 +1,20 @@
+Some thoughts:
+
+I understand it was an excercise in coding. In real world I'd probably start by considering building it on top of an already existing and time-proven logging framework like log4net or NLog. For example using log4net it would only be required to implement the asynchronity via custom AsyncAppender and the whole rest (e.g. file rolling) is already there in the framework.
+
+I removed regions. If you need regions, your classes are too big
+
+Public methods should go first in the file, fields should not be spread acros the file but grouped at the top
+
+Redundant comparison of bools to "true"... Like in 
+if (this._QuitWithFlush == true)
+I would like to point out that the whole expresssion (this._QuitWithFlush == true) is ALSO a bool, so by the same logic it should really be ((this._QuitWithFlush == true) == true). Oh, and that also is a bool, let's fix that... ;)
+
+In general it was easier to just sweep it and redo from scratch
+
+With this log file naming, it would take a bit of additional code to make 100% sure we don't get two files for the same day (currently the code is not prepared for concurrency).
+
+I'm aware there are still some specific bits in my code that could be further optimised.
+
+Also there are some parts that could be improved design-wise, like putting logging folder path into a config file, etc.
+Or the AsyncLog, that should be protected against thread leakage if noone calls Stop() and the variable goes out of scope.
