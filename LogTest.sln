@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogComponent", "LogTest\LogComponent.csproj", "{EE0CC7D7-A1A0-4A16-80E5-8B80B480EB47}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{E7E1A7F7-66B8-40C3-B30A-3633C4396AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogComponentTests", "LogComponentTests\LogComponentTests.csproj", "{E9EAC27C-C629-4B03-B23E-0A075211265F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{E7E1A7F7-66B8-40C3-B30A-3633C4396AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E1A7F7-66B8-40C3-B30A-3633C4396AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E1A7F7-66B8-40C3-B30A-3633C4396AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9EAC27C-C629-4B03-B23E-0A075211265F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9EAC27C-C629-4B03-B23E-0A075211265F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9EAC27C-C629-4B03-B23E-0A075211265F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9EAC27C-C629-4B03-B23E-0A075211265F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
