@@ -44,10 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncLogRequiredTests.cs" />
+    <Compile Include="DateTimeContextHelper.cs" />
+    <Compile Include="DateTimeStub.cs" />
+    <Compile Include="LogLineTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogTest\LogComponent.csproj">
+      <Project>{EE0CC7D7-A1A0-4A16-80E5-8B80B480EB47}</Project>
+      <Name>LogComponent</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
